@@ -18,3 +18,14 @@ def length[T](list: List[T]): Int = list match {
 
 
 length(list)
+
+def reverse[T](list: List[T]): List[T] = {
+  def loop(rem: List[T], acc: List[T]): List[T] = rem match {
+    case Nil              => acc
+    case Cons(head, tail) => loop(tail, Cons(head, acc))
+  }
+
+  loop(list, Nil)
+}
+
+reverse(list)

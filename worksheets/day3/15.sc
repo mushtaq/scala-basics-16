@@ -22,3 +22,8 @@ val map = Map.apply(1 -> "a", 2 -> "b")
 
 map(1)
 map.apply(1)
+
+List().reverse
+List(1).reverse
+List(1, 2).reverse
+List(1, 2, 3).reverse
