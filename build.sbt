@@ -6,5 +6,12 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "scala-basics-16",
-    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.0"
+    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.10.0",
+    scalacOptions ++= Seq(
+      "-encoding",
+      "UTF-8",
+      "-feature",
+      "-unchecked",
+      "-deprecation"
+    )
   )
