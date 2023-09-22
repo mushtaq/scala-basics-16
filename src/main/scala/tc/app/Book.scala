@@ -9,7 +9,7 @@ case class Book(
 )
 
 object Book {
-  val bookOrd: Ord[Book] = new Ord[Book] {
+  implicit val bookOrd: Ord[Book] = new Ord[Book] {
     override def compare(a: Book, b: Book): Boolean = a.basePrice < b.basePrice
   }
 }
