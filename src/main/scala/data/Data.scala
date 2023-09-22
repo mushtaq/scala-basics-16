@@ -1,6 +1,7 @@
 package data
 
 import play.api.libs.json.{JsNull, JsValue, Json}
+import tc.app.Book
 
 case class Address(street: String, pin: Int)
 
@@ -9,14 +10,6 @@ object Address {}
 case class Person(name: String, address: Address)
 
 object Person {}
-
-case class Book(
-    author: String,
-    title: String,
-    basePrice: Double
-)
-
-object Book {}
 
 object Data {
 

@@ -18,3 +18,7 @@ insert(1, list)
 val list = List(11, 2, 30, 4, 1, 5, 9, 3)
 
 sort(list)
+
+def dd(a: Int)(b: String) = a + b.length
+
+dd(10): String => Int
